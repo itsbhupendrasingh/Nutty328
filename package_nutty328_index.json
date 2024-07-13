@@ -19,8 +19,8 @@
           },
           "url": "https://github.com/itsbhupendrasingh/Nutty328/releases/download/1.0.0/nutty328-1.0.0.tar.bz2",
           "archiveFileName": "nutty328-1.0.0.tar.bz2",
-          "checksum": "SHA-256:<checksum>",
-          "size": "<size>",
+          "checksum": "SHA-256:c4285b594cff49f77dd780042cefb75f0a3b46f30a9732cbe2f18efe7e6eb34a",
+          "size": "3161",
           "boards": [
             {
               "name": "Nutty328"
