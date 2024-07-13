@@ -1,0 +1,36 @@
+name=Nutty328 AVR Boards
+version=1.0.0
+
+# AVR Uploader/Programmers tools
+tools.avrdude.cmd.path={runtime.tools.avrdude.path}/bin/avrdude
+tools.avrdude.config.path={runtime.tools.avrdude.path}/etc/avrdude.conf
+
+tools.avrdude.upload.params.verbose=-v
+tools.avrdude.upload.params.quiet=-q -q
+tools.avrdude.upload.pattern="{cmd.path}" {upload.verbose} -C"{config.path}" -p{build.mcu} -c{upload.protocol} -P{serial.port} -b{upload.speed} -D -Uflash:w:{build.path}/{build.project_name}.hex:i
+
+# AVR Compiler
+compiler.path={runtime.tools.avr-gcc.path}/bin/
+compiler.c.cmd=avr-gcc
+compiler.c.flags=-c -g -Os -w -ffunction-sections -fdata-sections -MMD
+compiler.c.elf.flags=-w -Os -Wl,--gc-sections
+compiler.c.elf.cmd=avr-gcc
+compiler.S.flags=-c -g -x assembler-with-cpp
+compiler.cpp.cmd=avr-g++
+compiler.cpp.flags=-c -g -Os -fno-exceptions -ffunction-sections -fdata-sections -MMD
+compiler.ar.cmd=avr-ar
+compiler.ar.flags=rcs
+compiler.objcopy.cmd=avr-objcopy
+compiler.objcopy.eep.flags=-O ihex -j .eeprom --set-section-flags=.eeprom=alloc,load --no-change-warnings --change-section-lma .eeprom=0
+compiler.objcopy.hex.flags=-O ihex -R .eeprom
+compiler.ldflags=
+compiler.size.cmd=avr-size
+compiler.size.flags=--mcu={build.mcu} -C --info
+compiler.warning_flags=-w
+build.extra_flags=
+
+build.mcu=atmega328p
+build.f_cpu=16000000L
+build.board=AVR_UNO
+build.core=arduino
+build.variant=nutty328
