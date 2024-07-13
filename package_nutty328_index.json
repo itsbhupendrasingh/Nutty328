@@ -1,0 +1,101 @@
+{
+  "packages": [
+    {
+      "name": "Nutty328",
+      "maintainer": "Bhupendra Singh",
+      "websiteURL": "https://github.com/itsbhupendrasingh/Nutty328",
+      "email": "schematicslab@gmail.com",
+      "help": {
+        "online": "https://github.com/itsbhupendrasingh/Nutty328/issues"
+      },
+      "platforms": [
+        {
+          "name": "Nutty328",
+          "architecture": "avr",
+          "version": "1.0.0",
+          "category": "Contributed",
+          "help": {
+            "online": "https://github.com/itsbhupendrasingh/Nutty328/issues"
+          },
+          "url": "https://github.com/itsbhupendrasingh/Nutty328/releases/download/1.0.0/nutty328-1.0.0.tar.bz2",
+          "archiveFileName": "nutty328-1.0.0.tar.bz2",
+          "checksum": "SHA-256:<checksum>",
+          "size": "<size>",
+          "boards": [
+            {
+              "name": "Nutty328"
+            }
+          ],
+          "toolsDependencies": [
+            {
+              "packager": "arduino",
+              "name": "avr-gcc",
+              "version": "7.3.0-atmel3.6.1-arduino5"
+            },
+            {
+              "packager": "arduino",
+              "name": "avrdude",
+              "version": "6.3.0-arduino17"
+            }
+          ]
+        }
+      ],
+      "tools": [
+        {
+          "name": "avr-gcc",
+          "version": "7.3.0-atmel3.6.1-arduino5",
+          "systems": [
+            {
+              "host": "i686-mingw32",
+              "url": "http://downloads.arduino.cc/tools/avr-gcc-7.3.0-atmel3.6.1-arduino5-i686-mingw32.zip",
+              "archiveFileName": "avr-gcc-7.3.0-atmel3.6.1-arduino5-i686-mingw32.zip",
+              "checksum": "SHA-256:somechecksumvalue",
+              "size": "some size in bytes"
+            },
+            {
+              "host": "x86_64-apple-darwin",
+              "url": "http://downloads.arduino.cc/tools/avr-gcc-7.3.0-atmel3.6.1-arduino5-x86_64-apple-darwin.tar.bz2",
+              "archiveFileName": "avr-gcc-7.3.0-atmel3.6.1-arduino5-x86_64-apple-darwin.tar.bz2",
+              "checksum": "SHA-256:somechecksumvalue",
+              "size": "some size in bytes"
+            },
+            {
+              "host": "x86_64-linux-gnu",
+              "url": "http://downloads.arduino.cc/tools/avr-gcc-7.3.0-atmel3.6.1-arduino5-x86_64-pc-linux-gnu.tar.bz2",
+              "archiveFileName": "avr-gcc-7.3.0-atmel3.6.1-arduino5-x86_64-pc-linux-gnu.tar.bz2",
+              "checksum": "SHA-256:somechecksumvalue",
+              "size": "some size in bytes"
+            }
+          ]
+        },
+        {
+          "name": "avrdude",
+          "version": "6.3.0-arduino17",
+          "systems": [
+            {
+              "host": "i686-mingw32",
+              "url": "http://downloads.arduino.cc/tools/avrdude-6.3.0-arduino17-i686-w64-mingw32.zip",
+              "archiveFileName": "avrdude-6.3.0-arduino17-i686-w64-mingw32.zip",
+              "checksum": "SHA-256:somechecksumvalue",
+              "size": "some size in bytes"
+            },
+            {
+              "host": "x86_64-apple-darwin",
+              "url": "http://downloads.arduino.cc/tools/avrdude-6.3.0-arduino17-x86_64-apple-darwin.tar.bz2",
+              "archiveFileName": "avrdude-6.3.0-arduino17-x86_64-apple-darwin.tar.bz2",
+              "checksum": "SHA-256:somechecksumvalue",
+              "size": "some size in bytes"
+            },
+            {
+              "host": "x86_64-linux-gnu",
+              "url": "http://downloads.arduino.cc/tools/avrdude-6.3.0-arduino17-x86_64-pc-linux-gnu.tar.bz2",
+              "archiveFileName": "avrdude-6.3.0-arduino17-x86_64-pc-linux-gnu.tar.bz2",
+              "checksum": "SHA-256:somechecksumvalue",
+              "size": "some size in bytes"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
